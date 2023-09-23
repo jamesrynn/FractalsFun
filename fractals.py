@@ -345,8 +345,6 @@ if __name__ == '__main__':
     # convert max_depths parameter from string to list[list[int]] format
     max_iters = ast.literal_eval(args.max_iters)
 
-    print(max_iters, type(max_iters))
-
     # convert remove parameter from string to list[int] format
     remove = ast.literal_eval(args.remove)
 
