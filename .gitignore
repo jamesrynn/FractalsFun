@@ -1,2 +1,6 @@
-# Image files
+## Image files
 *.png
+
+# allow display images for README file
+!carpet_display.png
+!triangles_display.png
