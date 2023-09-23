@@ -1,17 +1,5 @@
 """
-Generate images of fractals of type:
- - Sierpinski triangle
- - Bedford-McMullen carpet
- - rotating squares
-
-
-Example usage:
---------------
-To generate an array of Sierpinski triangles with transparent background
->> python fractals.py --fractal 'triangles' --max_iters '[[0,1],[2,3]]' -t
-
-To generate a single Bedford-McMullen carpet and display on screen
->> python fractals.py --fractal 'carpet' --max_iters '[[3]]' --remove '[3]' -s
+Script for generating images of Fractals, see README.md for details.
 """
 
 ##  -----  MODULES  -----  ##
