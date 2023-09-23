@@ -17,11 +17,11 @@ import numpy as np
 ##  -----  GLOBAL PARAMETERS  -----  ##
 
 # per-shape/image bounding box edge lengths in pixels
-SIZE_X, SIZE_Y = 5000, 5000
+SIZE_X, SIZE_Y = 2500, 2500
 SIZE_MIN = min(SIZE_X, SIZE_Y)
 
 # spacing between shapes
-SPACING_X, SPACING_Y = int(SIZE_X/10), int(SIZE_Y/10)
+SPACING_X, SPACING_Y = int(SIZE_X/20), int(SIZE_Y/20)
 
 FILL_RATIO = 0.65
 
