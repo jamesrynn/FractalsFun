@@ -355,6 +355,14 @@ if __name__ == '__main__':
     n_rows = len(max_iters)                                # number of rows in full image
     n_cols = max(len(max_iters[i]) for i in range(n_rows)) # number of columns in full image
 
+    # max depths matrix as list
+    max_iters = [max_iters[i][j] for i in range(n_rows) for j in range(len(max_iters[i]))]
+
+    # if single image remove bounding box by overriding spacing values
+    if len(max_iters) == 1:
+        SPACING_X = 0
+        SPACING_Y = 0
+
     w_ = n_cols*SIZE_X # combined width of sub-images
     h_ = n_rows*SIZE_Y # combined height of sub-images
 
@@ -364,9 +372,6 @@ if __name__ == '__main__':
     # creating new image object
     base_img = Image.new('RGB', (w,h), ImageColor.getcolor(WHITE, 'RGB'))
     img = ImageDraw.Draw(base_img)
-
-    # max depths matrix as list
-    max_iters = [max_iters[i][j] for i in range(n_rows) for j in range(len(max_iters[i]))]
 
 
     ## build fractals
